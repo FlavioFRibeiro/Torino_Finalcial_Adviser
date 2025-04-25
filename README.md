@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ## Usage
 1. Run the application using the following command:
    ```bash
-   python main.py
+   streamlit run main.py
    ```
 2. Open your web browser and navigate to `http://localhost:8501` to access the Torino Financial Advisor interface.
 3. Enter the stock ticker symbol in the input field and click on the "Analyze" button to fetch and visualize the stock data.
