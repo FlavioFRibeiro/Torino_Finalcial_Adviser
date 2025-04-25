@@ -1,5 +1,3 @@
-# File: /Torino_Financial_Advisor/Torino_Financial_Advisor/web_app/app.py
-
 import streamlit as st
 from analytics.data_extraction import data_extraction
 from analytics.plot_utils import plot_stock_price, plot_candlestick, plot_media_movel, plot_volume
@@ -18,7 +16,7 @@ def run_app():
     st.title("💰🦬 Torino - O AI Financial Advisor")
 
     # Interface principal
-    st.header("Stocks Analytics em Tempo Real com o Torino 🦬")
+    st.header("Stocks Analytics em Tempo Real")
 
     # Caixa de texto para input do usuário
     ticker = st.text_input("Digite o Código da Ação Desejada:").upper()
