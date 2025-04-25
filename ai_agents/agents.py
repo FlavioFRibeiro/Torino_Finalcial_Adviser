@@ -24,7 +24,7 @@ agente_financeiro = Agent(
         stock_fundamentals=True,
         company_news=True
     )],
-    instructions=["Use tabelas para mostrar os dados"],
+    instructions=["Sempre use tabelas para mostrar os dados"],
     show_tool_calls=True,
     markdown=True
 )
@@ -32,7 +32,8 @@ agente_financeiro = Agent(
 multi_ai_agent = Agent(
     team=[agente_web_search, agente_financeiro],
     model=Groq(id="llama-3.3-70b-versatile"),
-    instructions=["Sempre inclua as fontes", "Use tabelas para mostrar os dados"],
+    instructions=["Sempre inclua as fontes",
+                  "Sempre use tabelas para mostrar os dados"],
     show_tool_calls=True,
     markdown=True
 )
