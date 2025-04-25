@@ -1,33 +1,8 @@
-# Torino_Finalcial_Adviser
-This is the Script for Torino, the AI Agente Financial Advisor :)
+# Torino Financial Advisor
 
 ## Overview
-The Torino Financial Advisor is a real-time stock analysis application that leverages AI agents to provide insights and visualizations for investors. The application utilizes Yahoo Finance for data extraction and employs various plotting techniques to visualize stock performance..
+The Torino Financial Advisor is a real-time stock analysis application that leverages AI agents to provide insights and visualizations for investors. The application utilizes Yahoo Finance for data extraction and employs various plotting techniques to visualize stock performance.
 
-===========================================================================================================================================
-## How to Run it
-It runs locally, (because I don't want to spend too much money on cloud haha).
-
-You will need to have a Groq API Key (you can find more info here -> https://groq.com/) - add it on your .env file as GROQ_API_KEY = "your_key"
-
-In order to run it, follow the below steps:
-
-1- Open the terminal, go to your local folder, where you cloned this repository.
-
-2- Create the environment and install the requirements.
-
-    #Creates the Env
-    conda create --name deployai python=3.12
-    #Activates the Env.
-    conda activate deployai
-    #Install all the required libs
-    pip install -r requirements.txt 
-    
-3- Run the app locally and get all the info you want!
-
-    streamlit run main.py
-
-============================================================================================================================================
 ## Project Structure
 ```
 Torino_Financial_Advisor
@@ -45,8 +20,29 @@ Torino_Financial_Advisor
 ├── main.py
 └── README.md
 ```
-============================================================================================================================================
+
+## Installation
+To set up the project, ensure you have Python installed on your machine. Then, clone the repository and install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+1. Run the application using the following command:
+   ```bash
+   python main.py
+   ```
+2. Open your web browser and navigate to `http://localhost:8501` to access the Torino Financial Advisor interface.
+3. Enter the stock ticker symbol in the input field and click on the "Analyze" button to fetch and visualize the stock data.
+
 ## Features
 - **Data Extraction**: Fetches historical stock data from Yahoo Finance.
 - **Visualizations**: Displays stock prices, candlestick charts, moving averages, and trading volume.
 - **AI Agents**: Provides real-time analysis and recommendations using AI models.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
