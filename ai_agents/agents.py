@@ -31,7 +31,7 @@ agente_financeiro = Agent(
 
 multi_ai_agent = Agent(
     team=[agente_web_search, agente_financeiro],
-    model=Groq(id="llama-3.3-70b-versatile"),
+    model=Groq(id="deepseek-r1-distill-llama-70b"),
     instructions=["Sempre inclua as fontes",
                   "Sempre use tabelas para mostrar os dados"],
     show_tool_calls=True,
